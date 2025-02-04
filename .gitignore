@@ -1,3 +1,12 @@
+# MacOS
 .DS_Store
+__MACOSX
+
+# JS
 node_modules/
 out.js
+
+# IDE
+.idea/
+*.iml
+.vscode/

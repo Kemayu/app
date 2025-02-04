@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/esbuild main.js --bundle --outfile=out.js"
+    "build": "./node_modules/.bin/esbuild main.js --bundle --outfile=out.js",
+    "dev": "live-server ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Kemayu/app#readme",
   "dependencies": {
-    "esbuild": "^0.24.2"
+    "esbuild": "^0.24.2",
+    "live-server": "^1.2.2"
   }
 }
