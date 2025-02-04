@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/esbuild main.js --bundle --outfile=out.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemayu/app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kemayu/app/issues"
+  },
+  "homepage": "https://github.com/Kemayu/app#readme",
+  "dependencies": {
+    "esbuild": "^0.24.2"
+  }
+}

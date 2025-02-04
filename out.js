@@ -1,0 +1,4 @@
+(() => {
+  // main.js
+  alert("Bonjour !");
+})();
