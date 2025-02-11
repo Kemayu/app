@@ -10,16 +10,20 @@ class Cart {
         });
 
         if (existingItem) {
-            // Si le produit existe déjà, on incrémente la quantité
             existingItem.qty += 1;
         } else {
-            // Sinon, on l'ajoute avec une quantité de 1
             this.items.push({ product, qty: 1 });
         }
+    }
+
+
+    genericCalc(callback) {
+        return this.items.reduce(callback, 0);
+    }
+    getCartItems() {
+        return this.items;
     }
 }
 
 const cart = new Cart();
-cart.addToCart("P1");
 export { cart };
-
