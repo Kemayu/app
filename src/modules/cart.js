@@ -5,9 +5,7 @@ class Cart {
 
     addToCart(product) {
         // Utilisation d'une fonction classique pour rechercher le produit dans le panier
-        const existingItem = this.items.find(function(item) {
-            return item.product === product;
-        });
+        const existingItem = this.items.find((item) => item.product === product);
 
         if (existingItem) {
             // Si le produit existe déjà, on incrémente la quantité
