@@ -13,7 +13,6 @@ function displayProduct(product) {
             <div class="details-top">
                 <strong class="bigger">${product.ref}</strong>
                 <strong class="bigger">${product.price} €</strong>
-                 <button class="product-addToCart">Ajouter au panier</button>
             </div>
             <div class="details-description">
                 ${product.description}
