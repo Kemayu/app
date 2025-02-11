@@ -22,3 +22,4 @@ class Cart {
 const cart = new Cart();
 cart.addToCart("P1");
 export { cart };
+
