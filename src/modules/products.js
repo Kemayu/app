@@ -20,7 +20,7 @@ export{products};
 function search(keywords) {
     return products.filter(product =>
         product.ref.toLowerCase().includes(keywords.toLowerCase()) ||
-        product.description.toLowerCase().includes(keywords.toLowerCase)
+        product.description.toLowerCase().includes(keywords.toLowerCase())
     );
 }
 
