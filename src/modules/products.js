@@ -13,4 +13,15 @@ class Products{
         new Products("P1", 50, "Meilleur produit"),
         new Products("P2", 30, "Produit 2")
     ];
-export{products}; 
+export{products};
+
+
+function search(keywords) {
+    return products.filter(product =>
+        product.ref.toLowerCase().includes(keywords.toLowerCase()) ||
+        product.description.toLowerCase().includes(keywords.toLowerCase())
+    );
+}
+
+
+export { search };
