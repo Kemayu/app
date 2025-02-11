@@ -1,7 +1,7 @@
 class Products{
     constructor(ref, price, description){
-        if(typeof ref != "string" || typeof price != "number"|| typeof description != "string"){
-            throw new Error("Ce n'est pas un string");
+        if(typeof ref != "string" || typeof price != "number" || typeof description != "string"){
+            throw new TypeError("Ce n'est pas le bon type");
         }
         
         this.ref = ref;
