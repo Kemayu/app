@@ -9,7 +9,7 @@ function displayProduct(product) {
             <span class="mdi mdi-cart"></span>
             </a>
         </div>
-        <h3>${product.name}</h3>
+        <h3>${product.ref}</h3>
         <p>${product.description}</p>
         <strong>Prix : ${product.price}€</strong>
     `;
