@@ -19,8 +19,8 @@ export{products};
 
 function search(keywords) {
     return products.filter(product =>
-        product.ref.includes(keywords) ||
-        product.description.includes(keywords)
+        product.ref.toLowerCase().includes(keywords.toLowerCase()) ||
+        product.description.toLowerCase().includes(keywords.toLowerCase)
     );
 }
 
