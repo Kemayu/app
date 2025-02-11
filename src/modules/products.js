@@ -1,6 +1,6 @@
 class Products{
     constructor(ref, price, description){
-        if(typeof ref != "string" || typeof price != 1|| typeof description != "string"){
+        if(typeof ref != "string" || typeof price != "number"|| typeof description != "string"){
             throw new Error("Ce n'est pas un string");
         }
         
@@ -11,7 +11,8 @@ class Products{
 }
     const products = [ 
         new Products("P1", 50, "Meilleur produit"),
-        new Products("P2", 30, "Produit 2")
+        new Products("P2", 30, "Produit 2"),
+        new Products("P3", 40, "Produit 3")
     ];
 export{products};
 

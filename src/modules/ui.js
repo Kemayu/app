@@ -3,6 +3,12 @@ function displayProduct(product) {
     productElement.classList.add("product");
 
     productElement.innerHTML = `
+        <div class="photo">
+            picto
+            <a class="product-add2cart">
+            <span class="mdi mdi-cart"></span>
+            </a>
+        </div>
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <strong>Prix : ${product.price}€</strong>
@@ -12,7 +18,7 @@ function displayProduct(product) {
 }
 
 export function buildProductsList(products) {
-    const productListContainer = document.getElementById("products-list");
+    const productListContainer = document.getElementById("product-list");
 
     if (!productListContainer) {
         console.error("Erreur : l'élément #products-list est introuvable.");
