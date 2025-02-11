@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/esbuild main.js --bundle --outfile=out.js",
+    "build": "esbuild src/modules/main.js --bundle --outfile=out.js",
     "dev": "live-server ."
   },
   "repository": {

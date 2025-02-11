@@ -87,17 +87,4 @@ export function displayCart() {
     cartTotalSpan.textContent = `${cart.genericCalc((total, item) => total + (item.product.price * item.qty)).toFixed(2)} €`;
 }
 
-// Gestion du bouton "Vider le panier"
-export function setupEmptyCartButton() {
-    const emptyCartButton = document.getElementById("empty-cart");
 
-    if (!emptyCartButton) {
-        console.error("Erreur : Bouton 'Vider le panier' introuvable.");
-        return;
-    }
-
-    emptyCartButton.addEventListener("click", () => {
-        cart.emptyCart();
-        displayCart();
-    });
-}

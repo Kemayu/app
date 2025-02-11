@@ -13,6 +13,9 @@ class Cart {
             this.items.push({ product, qty: 1 });
         }
     }
+    emptyCart() {
+        this.items = [];
+    }
 
 
     genericCalc(callback) {
